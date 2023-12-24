@@ -6,36 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/tailwind.css" rel="stylesheet" />
     <title>Landing Page</title>
-
-    <!-- SLIDER by swiperjs.com -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module">
-        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-        const swiper = new Swiper(".swiper", {
+        const swiper = new Swiper('.swiper', {
             // Optional parameters
-            direction: "horizontal",
+            direction: 'horizontal',
             loop: true,
-            // slidesPerView: 2,
-
-            // If we need pagination
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
+            slidesPerView: 4,
+            centeredSlides: true,
 
             // Navigation arrows
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: ".swiper-scrollbar",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 text-gray-50">
@@ -85,7 +80,144 @@
         </section>
 
         <!-- slider section -->
-        <section id="slider"></section>
+        <section id="slider" class="mt-24">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div
+                            class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-gray-300 rounded-md w-[250px] h-auto">
+                            <div class="card-body grow">
+                                <img src="./assets/img/foto pak andre 1.webp" class="w-full h-auto" alt="">
+                            </div>
+                            <div class="card-footer text-center">
+                                <p>Clan Living: The Founder</p>
+                                <small>12 Rooms Hotel | 400 m2 land |
+                                    698 m2 building | Ubud</small>
+                                <div class="btn mt-3">
+                                    <button
+                                        class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                        daftar paket ini
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
 
         <!-- ROI -->
         <section id="3cards" class="mt-24">
@@ -508,7 +640,7 @@
                             <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
                             <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
                         </ul>
-                    </div>  
+                    </div>
                     <div class="card-footer text-center">
                         <div class="total text-red-500 text-xl font-semibold mb-3">
                             <p>Total Value</p>
@@ -541,9 +673,11 @@
                             <li>Rekaman Kelas <span class="text-yellow-300">senilai Rp 1jt</span></li>
                             <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
                             <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
-                            <li>1x Sesi 1 on 1 dengan pembicara <span class="text-yellow-300">senilai Rp 4.5jt</span></li>
+                            <li>1x Sesi 1 on 1 dengan pembicara <span class="text-yellow-300">senilai Rp 4.5jt</span>
+                            </li>
                             <li>1.729 Data tanah dijual di Bali <span class="text-yellow-300">senilai Rp 3jt</span></li>
-                            <li>Suprise gift untuk eskalasi bisnis propertimu <span class="text-yellow-300">senilai Rp 1.5jt</span></li>
+                            <li>Suprise gift untuk eskalasi bisnis propertimu <span class="text-yellow-300">senilai Rp
+                                    1.5jt</span></li>
                         </ul>
                     </div>
                     <div class="card-footer text-center mt-5">
