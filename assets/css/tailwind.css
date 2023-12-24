@@ -1220,6 +1220,11 @@ video {
     padding-right: 15rem;
   }
 
+  .xl\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
   .xl\:pl-0 {
     padding-left: 0px;
   }
