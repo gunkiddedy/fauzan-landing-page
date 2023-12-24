@@ -37,7 +37,8 @@
     <div class="wraper min-h-screen pb-8 overflow-y-auto overflow-x-hidden max-w-[1440px] mx-auto">
         <!-- hero section -->
         <section id="hero">
-            <div class="hero bg-gray-900 w-full px-28 py-20 h-full mx-auto flex items-center justify-around">
+            <div
+                class="hero bg-gray-900 w-full px-28 py-20 h-full mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-12 items-center justify-around">
                 <!-- left text -->
                 <div class="left-text">
                     <p class="text-gray-yellow text-4xl font-bold">
@@ -55,7 +56,8 @@
                         langkah praktis, pengalaman, dan data langsung dari yang
                         berpengalaman.
                     </p>
-                    <div class="tgl flex items-center space-x-8 text-3xl font-bold mt-4">
+                    <div
+                        class="tgl flex lg:flex-row flex-col items-center lg:space-x-8 space-x-0 lg:space-y-0 space-y-1 text-3xl font-bold mt-4">
                         <p>20 <span class="text-yellow-300">Januari</span> 2024</p>
                         <p>Tersisa <span class="text-yellow-300">30</span> kursi lagi!</p>
                     </div>
@@ -221,7 +223,8 @@
 
         <!-- ROI -->
         <section id="3cards" class="mt-24">
-            <div class="w-full h-full mx-auto flex items-center justify-around left-text text-3xl text-center">
+            <div
+                class="w-full h-full mx-auto flex xl:flex-row flex-col xl:space-y-0 space-y-12 items-center justify-around left-text text-3xl text-center">
                 <div class="left">
                     <p>ROI</p>
                     <p class="text-yellow-300">30%</p>
@@ -242,7 +245,7 @@
 
         <!-- Mentor anda pada webinar ini: -->
         <section id="mentor" class="mt-24">
-            <p class="text-center text-3xl font-semibold">
+            <p class="text-center text-3xl font-semibold px-12">
                 Mentor anda pada webinar ini:
             </p>
             <div class="flex flex-col items-center space-y-8 mt-8">
@@ -484,7 +487,7 @@
 
         <!-- videos -->
         <section id="videos" class="mt-24">
-            <div class="3texts text-3xl font-semibold text-center mb-20">
+            <div class="3texts text-3xl font-semibold text-center mb-20 px-12">
                 <p>
                     Sebagai <span class="text-yellow-300">Investor</span> yang
                     mengawasi
@@ -499,38 +502,44 @@
                     prosesnya
                 </p>
             </div>
-            <div class="videos grid grid-cols-3 gap-y-20 gap-x-8 px-20">
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+            <div class="videos grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 xl:px-20 px-5">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/planning.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">planning</p>
                 </div>
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/design.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">design</p>
                 </div>
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/negosiasi.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">negosiasi</p>
                 </div>
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/sosial.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">sosial</p>
                 </div>
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/pembangunan.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">pembangunan</p>
                 </div>
-                <div class="flex flex-col items-center space-y-3 w-[350px] h-full overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
                     <video controls>
                         <source src="./assets/video/manajemen.mp4" type="">
                     </video>
@@ -541,9 +550,9 @@
 
         <!-- Wawasan -->
         <section id="wawasan" class="mt-24">
-            <div class="wrap-text flex flex-col items-center">
-                <div class="wawasan text-xl w-[810px]">
-                    <p class="capitalize font-semibold text-2xl">Wawasan</p>
+            <div class="wrap-text flex flex-col xl:items-center xl:pl-0 md:pl-12 pl-5 md:pr-0 pr-5">
+                <div class="wawasan md:text-xl text-base xl:w-[810px] w-auto">
+                    <p class="capitalize font-semibold md:text-2xl text-xl">Wawasan</p>
                     <ul class="list-disc list-inside">
                         <li>Memahami arti menjadi entrepreneur</li>
                         <li>Kunci-kunci sukses para investor</li>
@@ -551,8 +560,8 @@
                     </ul>
                 </div>
 
-                <div class="investasi mt-5 text-xl w-[810px]">
-                    <p class="capitalize font-semibold text-2xl">Memahami Investasi</p>
+                <div class="investasi mt-5 md:text-xl text-base xl:w-[810px] w-auto">
+                    <p class="capitalize font-semibold md:text-2xl text-xl">Memahami Investasi</p>
                     <ul class="list-disc list-inside">
                         <li>Mindmap perencanaan investasi dan bagaimana menjalankannya</li>
                         <li>Data,regulasi, dan kondisi investasi properti saat ini</li>
@@ -561,8 +570,8 @@
                     </ul>
                 </div>
 
-                <div class="investasi mt-5 text-xl w-[810px]">
-                    <p class="capitalize font-semibold text-2xl">Membuat Properti Pertamamu</p>
+                <div class="investasi mt-5 md:text-xl text-base xl:w-[810px] w-auto">
+                    <p class="capitalize font-semibold md:text-2xl text-xl">Membuat Properti Pertamamu</p>
                     <ul class="list-disc list-inside">
                         <li>Cara membangun tim yang cocok untuk bisnis properti</li>
                         <li>Strategi pembuatan konsep menjadi sesuatu yang doable</li>
@@ -573,8 +582,8 @@
                     </ul>
                 </div>
 
-                <div class="investasi mt-5 text-xl w-[810px]">
-                    <p class="capitalize font-semibold text-2xl">Multiplikasi</p>
+                <div class="investasi mt-5 md:text-xl text-base xl:w-[810px] w-auto">
+                    <p class="capitalize font-semibold md:text-2xl text-xl">Multiplikasi</p>
                     <ul class="list-disc list-inside">
                         <li>Cara meningkatkan valuasi perusahaan propertimu berkali lipat</li>
                         <li>Tips mempunyai aset properti yang menguntungkan tanpa perlu sibuk</li>
@@ -585,115 +594,123 @@
 
         <!-- webinar -->
         <section id="webinar" class="mt-24">
-            <p class="title text-3xl text-center">
+            <p class="title text-3xl text-center px-12">
                 Webinar ini <span class="text-yellow-300">tidak</span> untuk semua orang! <br>
                 Hanya untuk kamu yang sudah <span class="text-yellow-300">siap</span> naik level <br>
                 Tempat Terbatas!
             </p>
 
             <!-- prices card -->
-            <div class="grid-prices-card grid grid-cols-3 gap-8 px-20 mt-12">
+            <div class="flex justify-center">
+                <div class="grid-prices-card grid lg:grid-cols-3 grid-cols-1 gap-8 xl:px-20 px-5 mt-12 justify-center">
 
-                <!-- card price -->
-                <div
-                    class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
-                    <div class="card-title w-full px-5">
-                        <p class="uppercase font-semibold text-2xl text-center">basic</p>
-                        <p class="text-center">hanya ingin tau saja</p>
-                    </div>
-                    <div class="card-body mt-12 grow">
-                        <ul class="list-disc list-inside">
-                            <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
-                            <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span></li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                        <div class="total text-red-500 text-xl font-semibold mb-3">
-                            <p>Total Value</p>
-                            <p class="line-through">Rp5.500.000</p>
+                    <!-- card price -->
+                    <div
+                        class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
+                        <div class="card-title w-full px-5">
+                            <p class="uppercase font-semibold text-2xl text-center">basic</p>
+                            <p class="text-center">hanya ingin tau saja</p>
                         </div>
-                        <p>Daftar hari ini hanya</p>
-                        <p class="price font-semibold text-xl">
-                            Rp197.000
-                        </p>
-                        <div class="btn mt-3">
-                            <button
-                                class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
-                                daftar paket ini
-                            </button>
+                        <div class="card-body mt-12 grow">
+                            <ul class="list-disc list-inside">
+                                <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
+                                <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="total text-red-500 text-xl font-semibold mb-3">
+                                <p>Total Value</p>
+                                <p class="line-through">Rp5.500.000</p>
+                            </div>
+                            <p>Daftar hari ini hanya</p>
+                            <p class="price font-semibold text-xl">
+                                Rp197.000
+                            </p>
+                            <div class="btn mt-3">
+                                <button
+                                    class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                    daftar paket ini
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- card price -->
-                <div
-                    class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
-                    <div class="card-title w-full px-5">
-                        <p class="uppercase font-semibold text-2xl text-center">INTERMEDIATE</p>
-                        <p class="text-center">Ingin tau dan ingin memulai</p>
-                    </div>
-                    <div class="card-body mt-12 grow">
-                        <ul class="list-disc list-inside">
-                            <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
-                            <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span></li>
-                            <li>Rekaman Kelas <span class="text-yellow-300">senilai Rp 1jt</span></li>
-                            <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
-                            <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                        <div class="total text-red-500 text-xl font-semibold mb-3">
-                            <p>Total Value</p>
-                            <p class="line-through">Rp7.650.000</p>
+                    <!-- card price -->
+                    <div
+                        class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
+                        <div class="card-title w-full px-5">
+                            <p class="uppercase font-semibold text-2xl text-center">INTERMEDIATE</p>
+                            <p class="text-center">Ingin tau dan ingin memulai</p>
                         </div>
-                        <p>Daftar hari ini hanya</p>
-                        <p class="price font-semibold text-xl">
-                            Rp297.000
-                        </p>
-                        <div class="btn mt-3">
-                            <button
-                                class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
-                                daftar paket ini
-                            </button>
+                        <div class="card-body mt-12 grow">
+                            <ul class="list-disc list-inside">
+                                <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
+                                <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span>
+                                </li>
+                                <li>Rekaman Kelas <span class="text-yellow-300">senilai Rp 1jt</span></li>
+                                <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
+                                <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="total text-red-500 text-xl font-semibold mb-3">
+                                <p>Total Value</p>
+                                <p class="line-through">Rp7.650.000</p>
+                            </div>
+                            <p>Daftar hari ini hanya</p>
+                            <p class="price font-semibold text-xl">
+                                Rp297.000
+                            </p>
+                            <div class="btn mt-3">
+                                <button
+                                    class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                    daftar paket ini
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- card price -->
-                <div
-                    class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
-                    <div class="card-title w-full px-5">
-                        <p class="uppercase font-semibold text-2xl text-center">PREMIUM</p>
-                        <p class="text-center">Ingin terjun secara penuh ke industri properti</p>
-                    </div>
-                    <div class="card-body mt-12 grow">
-                        <ul class="list-disc list-inside">
-                            <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
-                            <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span></li>
-                            <li>Rekaman Kelas <span class="text-yellow-300">senilai Rp 1jt</span></li>
-                            <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
-                            <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
-                            <li>1x Sesi 1 on 1 dengan pembicara <span class="text-yellow-300">senilai Rp 4.5jt</span>
-                            </li>
-                            <li>1.729 Data tanah dijual di Bali <span class="text-yellow-300">senilai Rp 3jt</span></li>
-                            <li>Suprise gift untuk eskalasi bisnis propertimu <span class="text-yellow-300">senilai Rp
-                                    1.5jt</span></li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center mt-5">
-                        <div class="total text-red-500 text-xl font-semibold mb-3">
-                            <p>Total Value</p>
-                            <p class="line-through">Rp16.650.000</p>
+                    <!-- card price -->
+                    <div
+                        class="card-price flex flex-col items-center justify-between px-5 py-8 border-2 border-yellow-300 rounded-md w-[320px] min-h-[600px]">
+                        <div class="card-title w-full px-5">
+                            <p class="uppercase font-semibold text-2xl text-center">PREMIUM</p>
+                            <p class="text-center">Ingin terjun secara penuh ke industri properti</p>
                         </div>
-                        <p>Daftar hari ini hanya</p>
-                        <p class="price font-semibold text-xl">
-                            Rp397.000
-                        </p>
-                        <div class="btn mt-3">
-                            <button
-                                class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
-                                daftar paket ini
-                            </button>
+                        <div class="card-body mt-12 grow">
+                            <ul class="list-disc list-inside">
+                                <li>Live interactive webinar <span class="text-yellow-300">senilai Rp4.5jt</span></li>
+                                <li>Voucher course di satuilmu.com <span class="text-yellow-300">senilai Rp1jt</span>
+                                </li>
+                                <li>Rekaman Kelas <span class="text-yellow-300">senilai Rp 1jt</span></li>
+                                <li>Grup diskusi mentoring <span class="text-yellow-300">senilai Rp850k</span></li>
+                                <li>File copy materi kelas <span class="text-yellow-300">senilai Rp300k</span></li>
+                                <li>1x Sesi 1 on 1 dengan pembicara <span class="text-yellow-300">senilai Rp
+                                        4.5jt</span>
+                                </li>
+                                <li>1.729 Data tanah dijual di Bali <span class="text-yellow-300">senilai Rp 3jt</span>
+                                </li>
+                                <li>Suprise gift untuk eskalasi bisnis propertimu <span class="text-yellow-300">senilai
+                                        Rp
+                                        1.5jt</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center mt-5">
+                            <div class="total text-red-500 text-xl font-semibold mb-3">
+                                <p>Total Value</p>
+                                <p class="line-through">Rp16.650.000</p>
+                            </div>
+                            <p>Daftar hari ini hanya</p>
+                            <p class="price font-semibold text-xl">
+                                Rp397.000
+                            </p>
+                            <div class="btn mt-3">
+                                <button
+                                    class="bg-yellow-300 text-gray-950 rounded-full px-8 py-2 capitalize text-base font-semibold">
+                                    daftar paket ini
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -702,14 +719,14 @@
 
         <!-- benefit -->
         <section id="benefit" class="mt-24">
-            <p class="title text-3xl font-semibold text-center">
+            <p class="title text-3xl font-semibold text-center px-12">
                 Benefit apa saja selain materi?
             </p>
 
-            <div class="wrap-text w-full px-60">
+            <div class="wrap-text w-full xl:px-60 md:px-12 px-5">
                 <!-- Network dengan Sesama Pebisnis Properti -->
                 <div class="flex">
-                    <div class="network text-xl w-[630px] mt-24">
+                    <div class="network text-xl xl:w-[630px] w-auto mt-24">
                         <p class="title text-yellow-300">
                             Network dengan Sesama Pebisnis Properti
                         </p>
@@ -726,7 +743,7 @@
 
                 <!-- Akses Prioritas -->
                 <div class="flex justify-end">
-                    <div class="network text-xl w-[630px] mt-24 text-right">
+                    <div class="network text-xl xl:w-[630px] w-auto mt-24 text-right">
                         <p class="title text-yellow-300">
                             Akses Prioritas
                         </p>
@@ -742,7 +759,7 @@
 
                 <!-- Mentoring dan Konsultasi -->
                 <div class="flex">
-                    <div class="network text-xl w-[630px] mt-24">
+                    <div class="network text-xl xl:w-[630px] w-auto mt-24">
                         <p class="title text-yellow-300">
                             Mentoring dan Konsultasi
                         </p>
@@ -760,11 +777,11 @@
 
         <!-- pesan -->
         <section id="pesan" class="mt-24">
-            <p class="title text-3xl text-center font-semibold">
+            <p class="title text-3xl text-center font-semibold px-12">
                 <span class="text-yellow-300">Pesan</span> dari pembicara
             </p>
 
-            <div class="content px-60 mt-20">
+            <div class="content xl:px-60 md:px-12 px-5 mt-20">
                 <!-- img and text -->
                 <div class="img-text-andre flex items-center space-x-4">
                     <div class="circle-img w-28 h-28 rounded-full bg-gray-50">
@@ -821,11 +838,11 @@
 
         <!-- faq -->
         <section id="faq" class="mt-24">
-            <p class="title uppercase text-3xl text-center font-semibold">
+            <p class="title uppercase text-3xl text-center font-semibold px-12">
                 faq
             </p>
 
-            <div class="asks flex flex-col space-y-5 text-xl px-60 mt-16">
+            <div class="asks flex flex-col space-y-5 text-xl xl:px-60 md:px-12 px-5 mt-16">
                 <!-- Apa yang dipelajari? -->
                 <div class="apa">
                     <p class="title font-bold">
