@@ -637,6 +637,10 @@ video {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .min-h-\[600px\] {
   min-height: 600px;
 }
@@ -677,12 +681,20 @@ video {
   width: 100%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
 
 .max-w-\[540px\] {
   max-width: 540px;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -831,19 +843,23 @@ video {
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/assets\/img\/background\.webp\'\)\] {
+  background-image: url('/assets/img/background.webp');
 }
 
 .p-5 {
@@ -878,6 +894,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-8 {
@@ -930,6 +951,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -976,6 +1002,28 @@ video {
 
 .line-through {
   text-decoration-line: line-through;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 @media (min-width: 768px) {

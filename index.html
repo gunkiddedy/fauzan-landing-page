@@ -27,15 +27,41 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* collapsible */
+        .collapsible {
+            cursor: pointer;
+            padding: 18px 0px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+        }
+
+        .collapsible:after {
+            content: '\1F783';
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: '\1F781';
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-bottom: 2px solid rgb(201, 197, 197);
+        }
     </style>
 </head>
 
-<body class="bg-gray-900 text-gray-50">
+<body class="bg-black bg-[url('/assets/img/background.webp')] text-gray-50">
     <div class="wraper min-h-screen pb-8 overflow-y-auto overflow-x-hidden max-w-[1440px] mx-auto">
         <!-- hero section -->
         <section id="hero">
             <div
-                class="hero bg-gray-900 w-full xl:px-28 md:px-12 px-5 py-20 h-full mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-12 items-center justify-around">
+                class="hero w-full xl:px-28 md:px-12 px-5 py-20 h-full mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-12 items-center justify-around">
                 <!-- left text -->
                 <div class="left-text">
                     <p class="text-gray-yellow text-4xl font-bold">
@@ -489,42 +515,42 @@
             <div class="videos grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 xl:px-20 px-5">
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/planning.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">planning</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/design.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">design</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/negosiasi.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">negosiasi</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/sosial.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">sosial</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/pembangunan.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">pembangunan</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center space-y-3 xl:w-[350px] w-auto h-full overflow-hidden">
-                    <video controls>
+                    <video controls muted>
                         <source src="./assets/video/manajemen.mp4" type="">
                     </video>
                     <p class="capitalize text-center font-semibold text-xl">manajemen</p>
@@ -765,7 +791,7 @@
                 <span class="text-yellow-300">Pesan</span> dari pembicara
             </p>
 
-            <div class="content xl:px-60 md:px-12 px-5 mt-20">
+            <div class="content-msg xl:px-60 md:px-12 px-5 mt-20">
                 <!-- img and text -->
                 <div class="img-text-andre flex items-center space-x-4">
                     <div class="circle-img w-28 h-28 rounded-full bg-gray-50">
@@ -826,13 +852,13 @@
                 faq
             </p>
 
-            <div class="asks flex flex-col space-y-5 text-xl xl:px-60 md:px-12 px-5 mt-16">
+            <div class="asks flex flex-col space-y-5 md:text-xl text-base xl:px-60 md:px-12 px-5 mt-16">
                 <!-- Apa yang dipelajari? -->
                 <div class="apa">
-                    <p class="title font-bold">
+                    <button class="collapsible title font-bold">
                         Apa yang dipelajari?
-                    </p>
-                    <p class="desc font-light">
+                    </button>
+                    <p class="desc content font-light">
                         Webinar ini adalah dasar-dasar memulai bisnis properti, khususnya untuk entrepreneur yang
                         sudah terbiasa mengerjakan segala hal dalam bisnisnya. Webinar ini membawa anda
                         memahami dunia industri properti dalam sudut pandang entrepreneur dan dalam wawasan
@@ -843,10 +869,10 @@
 
                 <!-- Saya pemula di industri properti, apakah bisa mengikuti webinar ini? -->
                 <div class="apa">
-                    <p class="title font-bold">
+                    <button class="collapsible title font-bold">
                         Saya pemula di industri properti, apakah bisa mengikuti webinar ini?
-                    </p>
-                    <p class="desc font-light">
+                    </button>
+                    <p class="desc content font-light">
                         Ya, bisa! karena di dalam materi ada beberapa pengalaman pembicara yang juga memulai
                         bisnis properti tanpa punya pengalaman dan koneksi secara langsung.
                     </p>
@@ -854,10 +880,10 @@
 
                 <!-- Saya bukan entrepreneur, tapi memiliki tanah yang ingin diproduktifkan, apakah bisa ikut? -->
                 <div class="apa">
-                    <p class="title font-bold">
+                    <button class="collapsible title font-bold">
                         Saya bukan entrepreneur, tapi memiliki tanah yang ingin diproduktifkan, apakah bisa ikut?
-                    </p>
-                    <p class="desc font-light">
+                    </button>
+                    <p class="desc content font-light">
                         Ya, bisa! pemilik tanah punya kesempatan yang besar memulai bisnis properti karena sudah
                         memiliki hal yang paling penting dalam properti itu sendiri. Dalam webinar ini anda akan
                         mempelajari apa saja yang bisa dilakukan pemilik tanah untuk memulai bisnis propertinya baik
@@ -868,10 +894,10 @@
 
                 <!-- Apakah ada grup diskusinya setelah webinar? -->
                 <div class="apa">
-                    <p class="title font-bold">
+                    <button class="collapsible title font-bold">
                         Apakah ada grup diskusinya setelah webinar?
-                    </p>
-                    <p class="desc font-light">
+                    </button>
+                    <p class="desc content font-light">
                         Ada tapi khusus untuk yang membeli paket Intermediate dan Premium.
                     </p>
                 </div>
@@ -911,6 +937,23 @@
             },
         });
         swiperEl.initialize();
+
+        // collapsible
+        let coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    content.style.paddingBottom = null;
+                } else {
+                    const addHeight = 50;
+                    content.style.maxHeight = content.scrollHeight + addHeight + "px";
+                    content.style.paddingBottom = '40px';
+                }
+            });
+        }
     </script>
 </body>
 
